@@ -16,6 +16,11 @@
     --nav-hover-background-color: var(--accent2-color);
 }
 
+header {
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
 body {
     font-family: var(--paragraph-font);
     max-width: 960px;
