@@ -43,9 +43,9 @@ aside {
 }
 
 aside h2 {
-    position: relative;
-    top: 25px;
-    left: 10px;
+    position: absolute;
+    top: 465px;
+    left: 7rem;
     color: aliceblue;
 }
 
