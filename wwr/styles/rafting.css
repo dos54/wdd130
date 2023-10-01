@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+
+    --primary-color: #03045E;
+    --secondary-color: #023E8A;
+    --accent1-color: #CAF0F8;
+    --accent2-color: #90E0EF;
+
+    --heading-font: 'Lato', Helvetica, sans-serif;
+    --paragraph-font: Arial, Helvetica, sans-serif;
+
+    --nav-background-color: var(--accent1-color);
+    --nav-link-color: var(--secondary-color);
+    --nav-hover-link-color: var(--primary-color);
+    --nav-hover-background-color: var(--accent2-color);
+}
+
+header {
+    color: var(--primary-color);
+    background-color: var(--accent1-color);
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+nav a:visited {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+}
+
+p {
+    padding: 25px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    text-align: center;
+    top: 250px;
+    width: 920px;
+    background-color: rgba(202, 240, 248, .5);
+}
+
+.hero article {
+    position: absolute;
+    width: 960px;
+
+    padding-top: 10px;
+    top: 350px;
+    background-color: rgba(202, 240, 248, .5);;
+}
+
+.hero article img {
+    float: right;
+    width: 15%;
+    height: auto;
+}
+
+.sociallinks a {
+    color: var(--accent1-color);
+    background-color: var(--accent1-color);
+}
+
+.sociallinks a img {
+    width: 50px;
+    height: auto;
+}
