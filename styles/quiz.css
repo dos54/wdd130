@@ -25,6 +25,7 @@ h1 {
     text-align: center;
 }
 
+
 form {
     width: 650px;
     margin: 0 auto;
@@ -63,6 +64,7 @@ label {
 input, select, textarea {
     padding: .5rem;
     font-size: 1.1rem;
+    width: 100%;
 }
 
 input[type="checkbox"] {
@@ -83,6 +85,12 @@ button {
 
 button:hover {
     background-color: darkgreen;
+}
+
+code {
+    background-color: #333;
+    color: #eee;
+    padding: 2px;
 }
 
 footer {
