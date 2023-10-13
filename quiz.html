@@ -15,44 +15,36 @@
     <main>
         <form>
             <fieldset>
-                <legend>Contact Information</legend>
-                <div class="form-item column2">
-                    <label for="fullname">Full Name: <input type="text" name="fullname"></label>
-                </div>
 
-                <div class="form-item column2">
-                    <label for="useremail">Email: <input type="email" name="useremail"></label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Questions</legend>
-                <div class="form-item column1">
-                    <label for="browser">What is your favorite browser?</label>
-                    <select name="browser" id="browser">
-                        <option value="chrome">Chrome</option>
-                        <option value="opera">Opera</option>
-                        <option value="safari">Safari</option>
-                        <option value="edge">Microsoft Edge</option>
-                    </select>
-                </div>
-
-                <div class="form-item column1">
-                    <label for="pet">Do you have a household pet?</label>
-                    <input type="checkbox" name="pet" id="pet">
+                <div class="form-item">
+                    <label for="q1">1. What does the acronym CSS stand for? <input type="text" name="q1" id="q1"></label>
                 </div>
 
                 <div class="form-item">
-                    <label for="feedback">List the places you have lived: </label>
-                    <textarea name="feedback" id="feedback" rows="4" placeholder="Ketchikan Alaska, Santa Ana El Salvador, Salt Lake City Utah"></textarea>
+                    <label for="q2">2. How are id and class attributes selected in CSS? <input type="textarea" name="q2" id="q2"></label>
+                </div>
+                <div class="form-item">
+                    <label for="q3">3. Which of the following is a valid CSS comment?</label>
+                    <select name="q3" id="q3">
+                        <option value="" selected disabled>Choose one...</option>
+                        <option value="option1">/* This is a comment */</option>
+                        <option value="option2">"This is a comment"</option>
+                        <option value="option3">#This is a comment</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="q4">4. How thick is a the border given border: 1px;</label>
+                    <input type="number" name="q4" id="q4">
                 </div>
             </fieldset>
 
-            <button type="submit">Submit Poll</button>
+            <button type="submit">Submit Quiz</button>
         </form>
     </main>
 
     <footer>
-        <p>©2024 | HTML Form - User Poll Activity | Steven Thomas</p>
+        <p>©2024 | Basic HTML and CSS Quiz | Steven Thomas</p>
     </footer>
 </body>
 </html>

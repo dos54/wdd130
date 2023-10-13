@@ -36,7 +36,8 @@ form {
 }
 
 fieldset {
-    display: grid;
+    display: block;
+    justify-content: center;
     grid-gap: .5rem;
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, .2);
@@ -54,9 +55,10 @@ label, input, button, select, textarea {
 }
 
 label {
-    text-align: right;
+    text-align: center;
     padding-right: 1rem;
 }
+
 
 input, select, textarea {
     padding: .5rem;
@@ -93,15 +95,7 @@ footer {
 }
 
 .form-item {
-    display: grid;
+    display: block;
     align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: .5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
+    width: 100%;
 }
