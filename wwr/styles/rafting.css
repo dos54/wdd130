@@ -132,8 +132,8 @@ button[type="submit"]:hover {
 .grid-container {
     display: grid;
     gap: 10px;
-    grid-template-columns: 5;
-    grid-template-rows: 8;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 
     background-color: var(--accent1-color);
 }
@@ -153,7 +153,7 @@ button[type="submit"]:hover {
 }
 
 .form-container {
-    grid-area: 3 / 1 / 8 / 5;
+    grid-area: 3 / 1 / 7 / 5;
 
 
     margin: 10px;
