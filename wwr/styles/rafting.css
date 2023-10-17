@@ -126,6 +126,10 @@ button[type="submit"]:hover {
     border: 5px solid #0000007f;
 }
 
+legend {
+    color: var(--primary-color);
+    font-weight: bold;
+}
 
 /* Class Selectors */
 
@@ -168,10 +172,7 @@ input[type="text"], input[type="email"] {
     width: 30em;
 }
 
-.form-legend {
-    color: var(--primary-color);
-    font-weight: bold;
-}
+
 
 .map {
     width: auto;
