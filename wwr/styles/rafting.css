@@ -7,6 +7,8 @@
     --accent1-color: #CAF0F8;
     --accent2-color: #90E0EF;
 
+    --hover-color: #90e1ef8f;
+
     --heading-font: 'Lato', Helvetica, sans-serif;
     --paragraph-font: Arial, Helvetica, sans-serif;
 
@@ -19,6 +21,9 @@
 header {
     color: var(--primary-color);
     background-color: var(--accent1-color);
+    position: sticky;
+    top: 0;
+    border-bottom: 5px solid #CAF0F8f4;
 }
 
 body {
@@ -26,7 +31,8 @@ body {
     box-sizing: border-box;
     max-width: 100%;
     min-width: 1000px;
-    padding: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,32 +40,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
     text-align: center;
     padding: 20px;
-    background-color: var(--accent1-color);
+    border-bottom: 1px solid #000;
+    /* background-color: var(--accent1-color); */
 }
-
-/* nav {
-    background-color: steelblue;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-nav a {
-    display: block;
-    color: white;
-    display: block;
-    padding: .5rem;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fff;
-}
-
-nav a:hover {
-    background-color: rgba(255, 255, 255, .1);
-} */
-
 
 nav {
     background-color: var(--nav-background-color);
@@ -68,7 +51,8 @@ nav {
     /* border: solid var(--nav-hover-link-color) 1px; */
 
     display: flex;
-    justify-content: space-evenly;
+    padding-right: 10%;
+    justify-content: flex-end;
     align-items: center;
 
     
@@ -100,6 +84,11 @@ nav a:hover {
 nav a:visited {
     background-color: var(--nav-hover-background-color);
     color: var(--nav-link-color);
+}
+
+img[src="images/logo.png"] {
+    width: 5rem;
+    height: auto;
 }
 
 p {
@@ -135,7 +124,7 @@ button[type="submit"]:hover {
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
 
-    background-color: var(--accent1-color);
+    /* background-color: var(--accent1-color); */
 }
 
 .grid-container p {
@@ -206,7 +195,7 @@ input[type="text"], input[type="email"] {
 .grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    align-items: center;
+    align-items: right;
 }
 
 .hero {
@@ -279,4 +268,48 @@ input[type="text"], input[type="email"] {
 .img-grid img {
     width: 190px;
     height: auto;
+}
+
+#schedule-trip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#trips-grid {
+    display: grid;
+    position: relative;
+    margin-top: 5rem;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem 10rem;
+    justify-content: center;
+}
+
+.trips-grid-item img {
+    width: 300px;
+    height: 200px;
+    border: 5px solid #0004;
+}
+
+.trips-grid-item article {
+    color: #0000;
+    background-color: #0000;
+    position: absolute;
+    vertical-align: center;
+    top: 0;
+    /* left: 0; */
+    margin: 5px;
+
+    text-align: center;
+
+
+    width: 300px;
+    height: 200px;
+    font-size: medium;
+
+}
+
+.trips-grid-item article:hover {
+    color: var(--primary-color);
+    background-color: var(--hover-color);
 }
