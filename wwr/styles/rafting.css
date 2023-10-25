@@ -407,14 +407,14 @@ input[type="text"], input[type="email"] {
     width: 200px;
 }
 
-#trips-button {
+.trips-button {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-#trips-button a {
+.trips-button a {
     cursor: pointer;
     background-color: var(--accent2-color);
     margin-top: 20px;
@@ -427,7 +427,7 @@ input[type="text"], input[type="email"] {
     color: var(--primary-color);
 }
 
-#trips-button a:hover {
+.trips-button a:hover {
     background-color: var(--accent1-color);
     margin-top: 20px;
     padding: 1em;
